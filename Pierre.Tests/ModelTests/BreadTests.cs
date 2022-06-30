@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Pierre.Models;
 using System.Collections.Generic;
 using System;
-//using Bread;
+
 
 namespace Pierre.Tests 
 {
@@ -10,20 +10,21 @@ namespace Pierre.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void Bread_GetBreadPrice_Bread()
+    public void Breads_GetBreadPrice_Breads()
     {
       int Price = 5;
+      int quantity = 1;
       Bread newBread = new Bread();
-      Assert.AreEqual(newBread.Price, Price);
+      Assert.AreEqual(newBread.Breads(quantity), Price);
     }
 
     [TestMethod]
-    public void Bread_GetCostOfMultipleBreads_BreadCost()
+    public void Breads_GetCostOfMultipleBreads_Breads()
     {
       int Price = 5;
-      int quantity = 3;
-      Bread newBread = new Bread();
-      Assert.AreEqual(newBread.BreadCost(quantity), Price * 2);
+      int quantity = 6;
+      Bread breadCost = new Bread();
+      Assert.AreEqual(Price * 4, breadCost.Breads(quantity));
     }
   }
 }
