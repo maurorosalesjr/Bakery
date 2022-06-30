@@ -16,5 +16,14 @@ namespace Pierre.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(newBread.Price, Price);
     }
+
+    [TestMethod]
+    public void Bread_GetCostOfMultipleBreads_BreadCost()
+    {
+      int Price = 5;
+      int quantity = 3;
+      Bread newBread = new Bread();
+      Assert.AreEqual(newBread.BreadCost(quantity), Price * 2);
+    }
   }
-};
+}
