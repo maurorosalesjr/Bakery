@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace Pierre.Models
+namespace BreadCost
 {
   public class Bread
   {
@@ -11,21 +11,19 @@ namespace Pierre.Models
       Price = 5;
       int cost = 0;
       while(quantity > 0)
+      {
+        if(quantity % 3 ==0)
         {
-          if(quantity % 3 == 0)
-          {
-            cost += Price * 2;
-            quantity -= 3;
-          }
-          else
-          {
-            cost += Price;
-            quantity--;
-          }
+          cost += Price *2;
+          quantity -= 3;
         }
-        return cost;
+        else
+        {
+          cost += Price;
+          quantity--;
+        }
+      }
+      return cost;
     }
-
-
   }
 }
