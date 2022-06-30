@@ -15,7 +15,16 @@ namespace Pierre.Tests2
       int Price = 2;
       int quantity = 1;
       Pastry newPastry = new Pastry();
-      Assert.AreEqual(newPastry.Pastries(quantity), Price)
+      Assert.AreEqual(newPastry.Pastries(quantity), Price);
+    }
+
+    [TestMethod]
+    public void Pastries_GetCostOFMultiplePastries_Pastries()
+    {
+      int Price = 2;
+      int quantity = 6;
+      Pastry pastryCost = new Pastry();
+      Assert.AreEqual(Price * 4, pastryCost.Pastries(quantity));
     }
   }
 }
