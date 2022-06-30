@@ -10,11 +10,11 @@ namespace Pierre.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void Bread_GetBreadPrice_True()
+    public void Bread_GetBreadPrice_Bread()
     {
       int Price = 5;
       Bread newBread = new Bread();
-      Assert.AreEqual(true, newBread.Price, Price.ToString());
+      Assert.AreEqual(newBread.Price, Price);
     }
   }
 };
