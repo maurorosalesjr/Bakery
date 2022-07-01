@@ -16,6 +16,19 @@ class Program
     if (answer == "Y" || answer == "y")
     {
       ShowMenu();
+      Console.WriteLine("What would you like to Order? Bread or Paastries?");
+      Console.Readline();
+
+    } 
+    else if (answer == "N" || answer == "n")
+    {
+      Console.WriteLine("Well, uh... i guess... Thank You for visting Pierre's Bakery");
+      Console.Writeline("Please come back soon!");
+    } 
+    else
+    {
+      Console.WriteLine("Please answer in to format given to you by our machine overlords...");
+      Main();
     }
 
 
