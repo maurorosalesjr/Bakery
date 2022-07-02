@@ -9,7 +9,13 @@ class Program
   static void Main()
   {
 
-    Console.WriteLine("Welcome To Pierre's Bakery!");
+    Console.WriteLine("Welcome To:");
+    Console.WriteLine("||===|| **                           ");
+    Console.WriteLine("||   ||                              ");
+    Console.WriteLine("||===|| || |==| ||/= ||/= |==| ' |== ");
+    Console.WriteLine("||      || |__| ||   ||   |__|   |__ ");
+    Console.WriteLine("||      || |___ ||   ||   |___    __|");
+    Console.WriteLine("Bakery!!!");
     Console.WriteLine("Can I get you any tasty treats today? ['Y' for Yes, 'N' for No]");
     string answer = Console.ReadLine();
 
@@ -58,7 +64,7 @@ class Program
     Console.WriteLine("How many loaves of Bread would you like?");
     string BreadQuantity = Console.ReadLine();
     int breadQuantity = int.Parse(BreadQuantity);
-      if(breadQuantity > 0)
+      if(breadQuantity >= 0)
       {          
         Order["Bread"] = breadQuantity;        
       }
@@ -69,7 +75,7 @@ class Program
     Console.WriteLine("How many Pastries would you like?");
     string PastryQuantity = Console.ReadLine();
     int pastryQuantity = int.Parse(PastryQuantity);
-      if(pastryQuantity > 0)
+      if(pastryQuantity >= 0)
       {
         Order["Pastry"] = pastryQuantity;
       }
