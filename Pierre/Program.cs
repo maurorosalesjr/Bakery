@@ -24,6 +24,7 @@ class Program
       ShowMenu();
       YourOrder();   
       Checkout(Order);
+      Console.WriteLine("@~*)~~*GOODBYE!*~~(*~@");
     } 
     else if (answer == "N" || answer == "n")
     {
@@ -85,6 +86,7 @@ class Program
       }      
     Console.WriteLine("Your Order:");
     ShowOrder(Order);
+    Console.WriteLine("Your Payment is being deducted from your account");
   }
   
   static void Checkout(Dictionary<string, int> Order)
