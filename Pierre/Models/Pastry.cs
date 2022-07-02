@@ -14,7 +14,7 @@ namespace PastryCost
       {
         if(quantity % 3 ==0)
         {
-          cost += Price *2;
+          cost += Price *2+1;
           quantity -=3;
         }
         else
