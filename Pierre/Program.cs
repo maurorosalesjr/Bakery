@@ -86,7 +86,7 @@ class Program
       }      
     Console.WriteLine("Your Order:");
     ShowOrder(Order);
-    Console.WriteLine("Your Payment is being deducted from your account");
+
   }
   
   static void Checkout(Dictionary<string, int> Order)
@@ -96,5 +96,6 @@ class Program
     Pastry pastry = new Pastry();
     total = bread.Breads(Order["Bread"]) + pastry.Pastries(Order["Pastry"]);
     Console.WriteLine("Your Total for {0} bread and {1} pastry will be ${2}.", Order["Bread"], Order["Pastry"], total);
+    Console.WriteLine("Your Payment is being deducted from your account");
   }
 }
