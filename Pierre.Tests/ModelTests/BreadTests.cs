@@ -22,9 +22,9 @@ namespace Pierre.Tests
     public void Breads_GetCostOfMultipleBreads_Breads()
     {
       int Price = 5;
-      int quantity = 6;
+      int quantity = 2;
       Bread breadCost = new Bread();
-      Assert.AreEqual(Price * 4, breadCost.Breads(quantity));
+      Assert.AreEqual(Price * 2, breadCost.Breads(quantity));
     }
   }
 }
