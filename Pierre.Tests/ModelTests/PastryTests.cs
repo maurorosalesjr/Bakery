@@ -22,9 +22,19 @@ namespace Pierre.Tests2
     public void Pastries_GetCostOFMultiplePastries_Pastries()
     {
       int Price = 2;
-      int quantity = 6;
+      int quantity = 2;
       Pastry pastryCost = new Pastry();
-      Assert.AreEqual(Price * 4 + 2, pastryCost.Pastries(quantity));
+      Assert.AreEqual(Price * 2, pastryCost.Pastries(quantity));
     }
+
+    [TestMethod]
+    public void Pastries_GetDiscoutedCostOf3Pastries_Pastries()
+    {
+      int Price = 2;
+      int quantity = 3;
+      Pastry pastryCost new Pastry();
+      Asser.AreEqual(Price * 2 + 1, pastryCost>pastries(quantity));
+    }
+
   }
 }
