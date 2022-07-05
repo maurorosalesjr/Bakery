@@ -32,8 +32,8 @@ namespace Pierre.Tests2
     {
       int Price = 2;
       int quantity = 3;
-      Pastry pastryCost new Pastry();
-      Asser.AreEqual(Price * 2 + 1, pastryCost>pastries(quantity));
+      Pastry pastryCost = new Pastry();
+      Assert.AreEqual(Price * 2 + 1, pastryCost.Pastries(quantity));
     }
 
   }
