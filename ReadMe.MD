@@ -20,6 +20,7 @@ This app will allow users to order Bread and Pastries from Peirre's Bakery. it w
 
 * Clone from git hub using this address: https://github.com/maurorosalesjr/Bakery
 * open terminal and navigate to Pierre.Tests folder and enter 'dotnet restore'
+* to test navigate to Pierre.Tests folder and enter 'dotnet test' to varify tests are passing.
 * navigate to Pierre folder, using the terminal, and type 'dotnet run'
 * follow in app instructions to get your order!
 
