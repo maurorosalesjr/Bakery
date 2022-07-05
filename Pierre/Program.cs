@@ -15,7 +15,13 @@ class Program
     Console.WriteLine("||===|| || |==| ||/= ||/= |==| ' |== ");
     Console.WriteLine("||      || |__| ||   ||   |__|   |__ ");
     Console.WriteLine("||      || |___ ||   ||   |___    __|");
-    Console.WriteLine("Bakery!!!");
+    Console.WriteLine("-------------------------------------");
+    Console.WriteLine("||== |       ||  |                   ");
+    Console.WriteLine("||   |       || |            |    |  ");
+    Console.WriteLine("||===  |==|  |||   |==| ||/=  |  |   ");
+    Console.WriteLine("||   | |  |  || |  |__| ||     ||    ");
+    Console.WriteLine("||== | |==|_ ||  | |___ ||     ||    ");
+    Console.WriteLine("-------------------------------------");
     Console.WriteLine("Can I get you any tasty treats today? ['Y' for Yes, 'N' for No]");
     string answer = Console.ReadLine();
 

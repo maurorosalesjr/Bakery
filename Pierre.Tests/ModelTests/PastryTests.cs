@@ -24,7 +24,7 @@ namespace Pierre.Tests2
       int Price = 2;
       int quantity = 6;
       Pastry pastryCost = new Pastry();
-      Assert.AreEqual(Price * 4, pastryCost.Pastries(quantity));
+      Assert.AreEqual(Price * 4 + 2, pastryCost.Pastries(quantity));
     }
   }
 }
